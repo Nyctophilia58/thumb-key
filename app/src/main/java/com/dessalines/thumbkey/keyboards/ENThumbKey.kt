@@ -9,6 +9,7 @@ import com.dessalines.thumbkey.utils.ColorVariant.*
 import com.dessalines.thumbkey.utils.FontSizeVariant.*
 import com.dessalines.thumbkey.utils.KeyAction.*
 import com.dessalines.thumbkey.utils.SwipeNWay.*
+import com.dessalines.thumbkey.textprocessors.AvroTextProcessor
 
 val KB_EN_THUMBKEY_MAIN =
     KeyboardC(
@@ -197,5 +198,6 @@ val KB_EN_THUMBKEY: KeyboardDefinition =
         settings =
             KeyboardDefinitionSettings(
                 autoCapitalizers = arrayOf(::autoCapitalizeI, ::autoCapitalizeIApostrophe),
+                textProcessor = AvroTextProcessor(),
             ),
     )
